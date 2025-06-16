@@ -1,0 +1,6 @@
+@import './ejemplo.scss';
+@import './demo.less';
+
+body {
+    background-color: bisque;
+}
