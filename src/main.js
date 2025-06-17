@@ -7,7 +7,9 @@ import buttonStyle from '../button.module.css'
 import img from '../vite-logo.webp'
 import imageStyles from '../image.module.css'
 import data from '../data.json';
+import sum from '../sum.ts';
 
+ console.log(`sum 2+3 = ${sum(2, 3)}`);
 const modules = import.meta.glob('../modules/*.js');
 
 for(const path in modules){
