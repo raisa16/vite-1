@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 import buttonStyles from './button.module.css'
 import img from '../vite-logo.png'
+import data from '../data.json'
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
@@ -20,8 +21,7 @@ document.querySelector('#app').innerHTML = `
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
-    <button id="btn">Click!</button>
-  </div>
+   </div>
   <button id="btn">Click!</button>
   <img id="img"/>
   <prep>${JSON.stringify(data)}</prep>
