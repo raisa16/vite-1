@@ -1,4 +1,5 @@
-import './style.css'
+import './style.css';
+import '../base.css';
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
@@ -21,6 +22,9 @@ document.querySelector('#app').innerHTML = `
     </p>
     <button id="btn">Click!</button>
   </div>
+  <button id="btn">Click!</button>
+  <img id="img"/>
+  <prep>${JSON.stringify(data)}</prep>
 `
 document.getElementById('btn').className = buttonStyles.btn
 setupCounter(document.querySelector('#counter'))
