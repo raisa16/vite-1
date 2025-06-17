@@ -19,12 +19,11 @@ export default defineConfig((command, mode) =>{
         console.log("modo produccion")
         return {
             build: {
-            rollupOptions: {
-                imput: {
-                    main: resolve (__dirname, 'index.html'),
-                    help: resolve (__dirname, 'help', 'help.html')
+                lib: {
+                    entry: resolve(__dirname, 'lib', 'main.js'),
+                    name: 'demo',
+                    filename: (format) => `demo.${format}.js`
                 }
-            }
         }
     }
     }
